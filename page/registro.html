@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/logo-search-grid-2x.png">
+    <title>Registrar Noticia - El Diario Capitalino</title>
+</head>
+<body>
+    <!--CABECERA-->
+    <header>
+        <h1 style="text-align: center;">EL DIARIO CAPITALINO</h1>
+        <p style="text-align: center;">Portal de Redacción y Publicación</p>
+    </header>
+
+    <!--NAVEGACION-->
+    <nav>
+        <a href="/index.html">Portada</a> |
+        <a href="/page/registro.html">Registrar Nueva Noticia</a>
+    </nav>
+    <hr>
+
+    <h2 style="text-align: center;">Formulario para Registrar una Nueva Noticia</h2>
+
+    <form action="#">
+        <!-- Campo 1: Titular (text) -->
+        <label for="titular">1. Titular de la noticia:</label>
+        <br><br>
+        <input type="text" id="titular" name="titular" placeholder="Ej. Inauguran nuevo parque en el norte de Quito" required>
+        <br><br>
+
+        <!-- Campo 2: Categoría (select) -->
+        <label for="categoria">2. Categoría / Sección:</label>
+        <br><br>
+        <select id="categoria" name="categoria" required>
+            <option value="" disabled selected>Seleccionar categoría</option>
+            <option value="nacional">Nacional</option>
+            <option value="economia">Economía</option>
+            <option value="internacional">Internacional</option>
+            <option value="deportes">Deportes</option>
+            <option value="tecnologia">Tecnología</option>
+        </select>
+        <br><br>
+
+        <!-- Campo 3: Fecha de publicación (date) -->
+        <label for="fecha">3. Fecha de publicación:</label>
+        <br><br>
+        <input type="date" id="fecha" name="fecha" required>
+        <br><br>
+
+        <!-- Campo 4: Autor / Periodista (text) -->
+        <label for="autor">4. Nombre del periodista / autor:</label>
+        <br><br>
+        <input type="text" id="autor" name="autor" placeholder="Ej. Ronny León" required>
+        <br><br>
+
+        <!-- Campo 5: Enlace de fuente (url) -->
+        <label for="fuente">5. Enlace de la fuente oficial (URL):</label>
+        <br><br>
+        <input type="url" id="fuente" name="fuente" placeholder="https://www.ejemplo.com/noticia">
+        <br><br>
+
+        <!-- Campo 6: Desarrollo de la noticia (textarea) -->
+        <label for="contenido">6. Contenido completo de la noticia:</label>
+        <br><br>
+        <textarea id="contenido" name="contenido" rows="5" cols="50" placeholder="Redacte aquí el cuerpo de la noticia..." required></textarea>
+        <br><br>
+
+        <!-- Campo 7: Imagen de portada (file) -->
+        <label for="imagen">7. Adjuntar fotografía de la noticia:</label>
+        <br><br>
+        <input type="file" id="imagen" name="imagen" accept="image/*">
+        <br><br>
+
+        <!--BOTONES-->
+        <input type="submit" value="Publicar Noticia">
+        <button type="reset">Limpiar Formulario</button>
+    </form>
+    <hr>
+
+    <!--PIE DE PAGINA-->
+    <footer>
+        <p>&copy; 2026 El Diario Capitalino</p>
+        <address>Quito - Ecuador</address>
+    </footer>
+</body>
+</html>
